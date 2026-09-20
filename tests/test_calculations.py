@@ -3,6 +3,7 @@ from mohr_circle.calculations import (
     radio_mohr,
     esfuerzos_principales,
     cortante_maximo,
+    angulo_principal,
 )
 
 
@@ -26,3 +27,8 @@ def test_esfuerzos_principales():
 def test_cortante_maximo():
     resultado = cortante_maximo(80, 20, 30)
     assert round(resultado, 2) == 42.43
+
+
+def test_angulo_principal():
+    resultado = angulo_principal(80, 20, 30)
+    assert round(resultado, 2) == 22.50

@@ -1,3 +1,4 @@
+import math
 def esfuerzo_promedio(sigma_x, sigma_y):
     """
     Calcula el esfuerzo normal promedio para el Círculo de Mohr.
@@ -34,3 +35,16 @@ def cortante_maximo(sigma_x, sigma_y, tau_xy):
     tau_max = radio_mohr(sigma_x, sigma_y, tau_xy)
     return tau_max
 
+
+def angulo_principal(sigma_x, sigma_y, tau_xy):
+    """
+    Calcula el ángulo principal del estado de esfuerzos en grados.
+    """
+    angulo_rad = 0.5 * math.atan2(
+        2 * tau_xy,
+        sigma_x - sigma_y
+    )
+
+    angulo_grados = math.degrees(angulo_rad)
+
+    return angulo_grados
