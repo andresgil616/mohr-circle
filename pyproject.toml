@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mohr-circle"
+version = "0.1.0"
+description = "Librería de Python para el cálculo y visualización del Círculo de Mohr."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Andrés Gil"}
+]
+
+[tool.setuptools.packages.find]
+include = ["mohr_circle*"]
