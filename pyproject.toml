@@ -8,6 +8,10 @@ version = "0.1.0"
 description = "Librería de Python para el cálculo y visualización del Círculo de Mohr."
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
 authors = [
     {name = "Andrés Gil"}
 ]
