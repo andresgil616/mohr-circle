@@ -235,6 +235,8 @@ pytest
 ```text
 mohr-circle/
 ├── README.md
+├── LICENSE
+├── requirements.txt
 ├── pyproject.toml
 ├── mohr_circle/
 │   ├── __init__.py
